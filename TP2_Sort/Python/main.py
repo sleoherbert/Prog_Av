@@ -3,21 +3,11 @@ from random import *
 
 #TP FONCTION DE TRI 
 
-tab= array[]
+tab = np.empty()
 
-#Procédure d'affichage de tableau
+#Procedure de generation de tableau a vide
 
-def afficher(tab)
-	for i in range(len(tab)):
-		print(tab[i])
-
-
-
-#Procédure de génération de tableau
-
-def gentab(tab):
-	for i in range(len(tab)):
-		tab[i] = randrange(30000)
+def gentab(tab,col):
+	tab = numpy.zeros((1,col),dtype='i')
 	print ("tableau initial")
-	afficher(tab)
-
+	print(tab)
